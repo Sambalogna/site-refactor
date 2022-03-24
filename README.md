@@ -33,7 +33,7 @@ added alt attributes to all images on the webpage.
 
 ## h 
 
-made the h tags senquential. This caused Lead Generation, Brand Awareness, and Cost Management to increase to the size of h2. The footer had an h2 tag which is now h3 to follow sequence causing Made with <3 by Horiseon to shrink to the size of an h3 tag
+made the h tags sequential. This caused Lead Generation, Brand Awareness, and Cost Management to increase to the size of h2. The footer had an h2 tag which is now h3 to follow sequence causing Made with <3 by Horiseon to shrink to the size of an h3 tag
 
 ## sections
 
