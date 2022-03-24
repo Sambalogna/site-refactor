@@ -13,6 +13,7 @@ Horiseon's website needed refactoring here are all of the changes to the origina
 * [H_tags](#h)
 * [sections](#sections)
 * [footer](#footer)
+* [nav](#nav)
 
 
 ## seo
@@ -41,3 +42,7 @@ made the divs that held classes: benefits and content into section tags for sema
 ## footer
 
 changed the div class ="footer" to just footer for semantic html purposes
+
+## nav 
+
+changed div around the navigation elements in the header for semantic html purposes
