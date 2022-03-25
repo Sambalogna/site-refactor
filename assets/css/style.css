@@ -8,6 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* css changed from .header class selector to element selector */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,17 +16,20 @@ header {
     color: #ffffff;
 }
 
+/* switch from .header to header */
 header
  h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* switch from .header to header */
 header h1
 .seo {
     color: #d9dcd6;
 }
 
+/* change to header and nav to match sematic html */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -34,10 +38,12 @@ header nav {
     font-size: 20px;
 }
 
+/* change to header and nav to match sematic html */
 header nav ul {
     list-style-type: none;
 }
 
+/* change to header and nav to match sematic html */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
@@ -189,13 +195,14 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* change to element selector from .footer */
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+/* change to element selector from .footer */
 
 footer h3 {
     font-size: 20px;
