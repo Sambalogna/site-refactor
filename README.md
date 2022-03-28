@@ -2,47 +2,38 @@
 
 ## Description 
 
-Horiseon's website needed refactoring here are all of the changes to the original index.html 
+Horiseon's website needed refactoring into a format using semantic html. The website also needed fixes to link functionality and alternate text to the webpages images. This required changed to both the index.html and the style.css.
 
 ## Table of Contents
 
-* [SEO](#seo)
-* [header](#header)
-* [title](#title)
-* [Alt](#alt)
-* [H_tags](#h)
-* [sections](#sections)
-* [footer](#footer)
-* [nav](#nav)
+* [Languages](#Languages)
+* [Acceptance Criteria](#Requirements)
+* [Semantic HTML](#Semantic_Html)
+* [Accessibility](#Accessibility)
 
 
-## seo
-The div for search-engine-optimization needed an id for the menu link to utilize href="#search-engine-optimization"
 
-## header 
 
-The header was contained within a div tag with the id = "header". This was changed to header to make the html elements semantically clear.
+## Languages
+This project utilizes both HTML and CSS. 
 
-## title
+## Acceptance Criteria
 
-Changed title from webpage to Horiseon
+GIVEN a webpage meets accessibility standards
+WHEN I view the source code
+THEN I find semantic HTML elements
+WHEN I view the structure of the HTML elements
+THEN I find that the elements follow a logical structure independent of styling and positioning
+WHEN I view the icon and image elements
+THEN I find accessible alt attributes
+WHEN I view the heading attributes
+THEN they fall in sequential order
+WHEN I view the title element
+THEN I find a concise, descriptive title
 
-## alt
 
-added alt attributes to all images on the webpage.
+## Semantic_HTML 
+This project replaces html tags that did not have semantic purpose into semantic html tags in order to better define the different sections according to the webpages layout. This included necessary changes in the style.css file to maintain styles on the page. 
 
-## h 
-
-made the h tags sequential. This caused Lead Generation, Brand Awareness, and Cost Management to increase to the size of h2. The footer had an h2 tag which is now h3 to follow sequence causing Made with <3 by Horiseon to shrink to the size of an h3 tag
-
-## sections
-
-made the divs that held classes: benefits and content into section tags for semantic purposes.
-
-## footer
-
-changed the div class ="footer" to just footer for semantic html purposes
-
-## nav 
-
-changed div around the navigation elements in the header for semantic html purposes
+## Accessibility
+The project had accessibility issues. This included fixes to link functionality, alternate texts in images and including a informative title.
