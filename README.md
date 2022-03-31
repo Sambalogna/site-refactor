@@ -2,48 +2,79 @@
 
 ## Description 
 
-Horiseon's website needed refactoring into a format using semantic html. The website also needed fixes to link functionality and alternate text to the webpages images. This required changed to both the index.html and the style.css.
+Horiseon's website needed refactoring into a format using semantic html. The website also needed accessibility fixes. This required changed to both the index.html and the style.css.
+
+Html tags that did not have semantic purpose were converted into semantic html tags in order to better define the different sections according to the webpages layout. This included necessary changes in the style.css file to maintain styles on the page. 
+
+The project's accessibility issues included fixes to link functionality, alternate texts in images and including a informative title.
 
 ## Table of Contents
 
 * [Languages](#Languages)
-* [Acceptance Criteria](#Requirements)
-* [Semantic HTML](#Semantic_Html)
-* [Accessibility](#Accessibility)
-
-
+* [Important Code Snippets](#CodeSnippets)
 
 
 ## Languages
 This project utilizes both HTML and CSS. 
 
-## Acceptance Criteria
+## CodeSnippets
 
-GIVEN a webpage meets accessibility standards
+**Example Changes** \
+The following provide examples of the overall semantic overhaul of the websites html and fixes to accessibility.
 
-WHEN I view the source code
+Before: No ID class for nav link
+```html
+<div class="search-engine-optimization">
+```
+After: lack of ID class causes accessibility issues.
+```html
+ <div id="search-engine-optimization" class="search-engine-optimization">
+```
 
-THEN I find semantic HTML elements
+Before:
+```html
+<img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+```
+After: alternative text added
+```html
+<img src="./assets/images/search-engine-optimization.jpg" alt="search-engine-optimization" class="float-left" />
+```
 
-WHEN I view the structure of the HTML elements
-
-THEN I find that the elements follow a logical structure independent of styling and positioning
-
-WHEN I view the icon and image elements
-
-THEN I find accessible alt attributes
-
-WHEN I view the heading attributes
-
-THEN they fall in sequential order
-
-WHEN I view the title element
-
-THEN I find a concise, descriptive title
-
-
-## Semantic_HTML 
-This project replaces html tags that did not have semantic purpose into semantic html tags in order to better define the different sections according to the webpages layout. This included necessary changes in the style.css file to maintain styles on the page. 
-
-## Accessibility
-The project had accessibility issues. This included fixes to link functionality, alternate texts in images and including a informative title.
+Before:
+```html
+<div class="header">
+        <h1>Hori<span class="seo">seo</span>n</h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+```
+After: header and nav used for semantic purpose
+```html
+<header>
+        <h1>Hori<span class="seo">seo</span>n</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+```
