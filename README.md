@@ -9,7 +9,7 @@ Html tags that did not have semantic purpose were converted into semantic html t
 The project's accessibility issues included fixes to link functionality, alternate texts in images and including a informative title.
 
 [Horiseon](https://sambalogna.github.io/site-refactor/)
-[Horiseon](./assets/images/horiseon.PNG)
+![Horiseon](./assets/images/horiseon.PNG)
 
 ## Table of Contents
 
